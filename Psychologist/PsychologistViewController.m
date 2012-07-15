@@ -7,6 +7,7 @@
 //
 
 #import "PsychologistViewController.h"
+#import "HappinessViewController.h"
 
 @interface PsychologistViewController()
 @property (nonatomic) int diagnosis;
@@ -19,7 +20,14 @@
 - (void)setAndShowDiagnosis:(int)diagnosis
 {
     self.diagnosis = diagnosis;
-    // segue
+    [self performSegueWithIdentifier:@"ShowDiagnosis" sender:self];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"ShowDiagnosis"]) {
+        [segue.destinationViewController setHappiness:self.diagnosis];
+    }
 }
 
 - (IBAction)flying {

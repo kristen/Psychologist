@@ -70,9 +70,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <segue destination="Kgq-Zq-KFv" kind="push" identifier="ShowDiagnosis" id="n3o-c2-c7D"/>
+                    </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="169" y="173"/>
+            <point key="canvasLocation" x="161" y="-583"/>
         </scene>
         <!--Happiness View Controller-->
         <scene sceneID="SSz-Ur-yRA">
@@ -91,12 +94,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="0Yw-GU-fhi"/>
                     <connections>
                         <outlet property="faceView" destination="Hdr-OR-xPa" id="HvZ-GL-zFv"/>
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="581" y="173"/>
+            <point key="canvasLocation" x="603" y="-583"/>
         </scene>
     </scenes>
     <classes>
