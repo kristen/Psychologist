@@ -14,13 +14,24 @@
 
 @implementation PsychologistViewController
 
+@synthesize diagnosis = _diagnosis;
+
+- (void)setAndShowDiagnosis:(int)diagnosis
+{
+    self.diagnosis = diagnosis;
+    // segue
+}
+
 - (IBAction)flying {
+    [self setAndShowDiagnosis:85];
 }
 
 - (IBAction)apple {
+    [self setAndShowDiagnosis:100];
 }
 
 - (IBAction)dragons {
+    [self setAndShowDiagnosis:20];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
