@@ -8,27 +8,24 @@
 
 #import "PsychologistViewController.h"
 
-@interface PsychologistViewController ()
-
+@interface PsychologistViewController()
+@property (nonatomic) int diagnosis;
 @end
 
 @implementation PsychologistViewController
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+- (IBAction)flying {
 }
 
-- (void)viewDidUnload
-{
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
+- (IBAction)apple {
+}
+
+- (IBAction)dragons {
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-    return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+    return YES;
 }
 
 @end
